@@ -11,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.jetpacktutorial.ui.theme.JetpackTutorialTheme
+import com.example.jetpacktutorial.ui.theme.Red200
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,10 +21,9 @@ class MainActivity : ComponentActivity() {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
+                    color = Red200
                 ) {
-//                    Greeting("Android")
-                    Go()
+                    Greeting("Android")
                 }
             }
         }
